@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "Bliss Pro";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/BlissPro-ExtraLight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Bliss Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/BlissPro-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Bliss Pro";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/BlissPro-RegularItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Bliss Pro";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/BlissPro-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Bliss Pro";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/BlissPro-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Bliss Pro";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/BlissPro-BoldItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Bliss Pro";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/BlissPro-ExtraBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Bliss Pro";
+  font-style: italic;
+  font-weight: 800;
+  src: url("../fonts/BlissPro-ExtraBoldItalic.otf") format("opentype");
+}
+
+::placeholder {
+  color: transparent !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+.container {
+  @apply items-center min-h-screen p-8 bg-gray-100;
+}
+
+.card {
+  @apply bg-white rounded-2xl p-8 shadow-lg max-w-sm w-full gap-8;
+}
+
+.signup-form {
+  @apply flex flex-col gap-4 justify-between;
+}
+
+.name-row {
+  @apply input_active_field-label justify-between;
+}
+
+.custom-input {
+  @apply input_active;
+
+  &:hover {
+    @apply input_hover;
+  }
+
+  &:focus {
+    @apply input_selected;
+  }
+
+  label {
+    @apply input_active input_active_field-label input_active_field-label_field-label;
+
+    &:hover {
+      @apply input_hover_field-label input_hover_field-label_field-label;
+    }
+
+    &:focus {
+      @apply input_selected_field-label input_selected_field-label_field-label;
+    }
+  }
+
+  input {
+    width: 100%;
+    @apply input_active_component_field_field-components
+           input_active_component_field_field-components_field-text
+           input_active_component_field_field-components_field-text_input-content;
+
+    &:hover {
+      @apply input_hover_component_field_field-components
+             input_hover_component_field_field-components_field-text
+             input_hover_component_field_field-components_field-text_input-content;
+    }
+
+    &:focus {
+      @apply input_selected_component_field_field-components
+             input_selected_component_field_field-components_field-text
+             input_selected_component_field_field-components_field-text_input-content;
+    }
+  }
+
+  button {
+    @apply button_inactive button_inactive_button;
+
+    &:hover {
+      @apply button_hover button_hover_button;
+    }
+
+    &:focus,
+    &:active {
+      @apply button_pressed button_pressed_button;
+    }
+  }
+}

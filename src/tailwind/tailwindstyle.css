@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --color-red-100: #f8e7ea;
+  --color-red-500: #ba0c2f;
+
+  --color-gray-400: #989a9c;
+  --color-gray-600: #585a5c;
+  --color-gray-700: #3b3c3e;
+
+  --color-blue-100: #e0f5ff;
+  --color-blue-200: #b2e5ff;
+  --color-blue-400: #405eb8;
+  --color-blue-500: #0028a0;
+  --color-blue-600: #001e78;
+  --color-blue-900: #003955;
+
+  --color-green-100: #d9f3bc;
+  --color-green-300: #76c022;
+
+  --font-bliss: "Bliss Pro", sans-serif;
+}
+
+@import "../css/_source.css";
+@import "../css/custom.css";
