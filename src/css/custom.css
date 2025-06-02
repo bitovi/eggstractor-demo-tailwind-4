@@ -106,18 +106,18 @@ select:focus {
   input {
     width: 100%;
     @apply input_active_component_field_field-components
-           input_active_component_field_field-components_field-text
+           !input_active_component_field_field-components_field-text
            input_active_component_field_field-components_field-text_input-content;
 
     &:hover {
       @apply input_hover_component_field_field-components
-             input_hover_component_field_field-components_field-text
+             !input_hover_component_field_field-components_field-text
              input_hover_component_field_field-components_field-text_input-content;
     }
 
     &:focus {
       @apply input_selected_component_field_field-components
-             input_selected_component_field_field-components_field-text
+             !input_selected_component_field_field-components_field-text
              input_selected_component_field_field-components_field-text_input-content;
     }
   }
